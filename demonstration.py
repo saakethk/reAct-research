@@ -11,12 +11,10 @@ load_dotenv()
 
 @tool("reddit_data_fetcher", description="Gets relevant reddit data reviews about a class. The class could be a code like COP3504 or a name like Advanced Prog.")
 def get_reddit_data(class_name: str) -> str:
-    """Search for information."""
     return f"{class_name} is really easy."
 
 @tool("professor_data_fetcher", description="Gets relevant professor reviews")
 def get_professor_info(name: str) -> str:
-    """Get weather information for a location."""
     return f"{name} is a good professor."
 
 
